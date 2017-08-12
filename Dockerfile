@@ -1,1 +1,1 @@
-FROM: node: 8.3.0
+FROM node: 8.3.0

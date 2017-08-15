@@ -7,15 +7,11 @@ RUN useradd -d /home/thecb4 -m -s /bin/bash thecb4 && echo "thecb4:thecb4" | chp
 
 # RUN chown -R thecb4:thecb4 /home/thecb4
 
-WORKDIR /usr/keystone
-
-RUN chown -R thecb4:thecb4 /usr/keystone
-
-RUN mkdir /usr/keystone/node_modules
-
-RUN chown -R thecb4:thecb4 /usr/keystone/node_modules
+RUN chown -R thecb4:thecb4 /home/thecb4/keystone
 
 USER thecb4
+
+WORKDIR /home/thecb4/keystone
 
 # COPY package.json /node/lib/
 # WORKDIR /node/lib/

@@ -7,4 +7,4 @@ WORKDIR /user/keystone
 
 RUN npm install
 
-CMD ["node", "keystone"]
+CMD ["node", "keystone.js"]

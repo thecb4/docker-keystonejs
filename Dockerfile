@@ -13,4 +13,4 @@ USER thecb4
 
 RUN npm install
 
-CMD ["node", "keystone.js"]
+CMD ["npm", "start"]

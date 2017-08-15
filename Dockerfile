@@ -13,6 +13,6 @@ RUN chown -R thecb4:thecb4 /usr/keystone
 
 USER thecb4
 
-RUN npm install
+RUN npm install -v
 
 CMD ["npm", "start"]

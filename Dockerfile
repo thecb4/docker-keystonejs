@@ -7,9 +7,11 @@ RUN useradd -d /home/thecb4 -m -s /bin/bash thecb4 && echo "thecb4:thecb4" | chp
 
 RUN chown -R thecb4:thecb4 /home/thecb4
 
-USER thecb4
-
 WORKDIR /usr/keystone
+
+RUN chown -R thecb4:thecb4 /usr/keystone
+
+USER thecb4
 
 RUN npm install
 

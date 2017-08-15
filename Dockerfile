@@ -20,6 +20,6 @@ USER thecb4
 
 # RUN npm install
 
-CMD /bin/bash -c 'sudo npm install; sudo npm start'
+CMD /bin/bash -c 'npm install; npm start'
 
 # CMD ["npm", "start"]

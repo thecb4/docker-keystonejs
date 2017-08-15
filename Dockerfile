@@ -13,11 +13,13 @@ RUN chown -R thecb4:thecb4 /usr/keystone
 
 USER thecb4
 
-COPY package.json /node/lib/
-WORKDIR /node/lib/
-RUN npm install
-ENV PATH /node/lib/node_modules/.bin:$PATH
+# COPY package.json /node/lib/
+# WORKDIR /node/lib/
+# RUN npm install
+# ENV PATH /node/lib/node_modules/.bin:$PATH
 
-RUN npm install
+# RUN npm install
 
-CMD ["npm", "start"]
+CMD /bin/bash -c 'npm install; npm start'
+
+# CMD ["npm", "start"]

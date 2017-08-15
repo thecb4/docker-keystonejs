@@ -9,7 +9,7 @@ RUN chown -R thecb4:thecb4 /home/thecb4
 
 USER thecb4
 
-WORKDIR /user/keystone
+WORKDIR /usr/keystone
 
 RUN npm install
 

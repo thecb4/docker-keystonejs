@@ -13,6 +13,8 @@ RUN chown -R thecb4:thecb4 /usr/keystone
 
 USER thecb4
 
+RUN mkdir /usr/keystone/node_modules
+
 # COPY package.json /node/lib/
 # WORKDIR /node/lib/
 # RUN npm install

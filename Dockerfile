@@ -9,10 +9,10 @@ RUN useradd -d /home/thecb4 -m -s /bin/bash thecb4 && echo "thecb4:thecb4" | chp
 
 USER thecb4
 
-RUN mkdir /home/thecb4/keystone
-
-RUN chown -R thecb4:thecb4 /home/thecb4/keystone
-
+# RUN mkdir /home/thecb4/keystone
+#
+# RUN chown -R thecb4:thecb4 /home/thecb4/keystone
+#
 WORKDIR /home/thecb4/keystone
 
 # COPY package.json /node/lib/
@@ -22,6 +22,8 @@ WORKDIR /home/thecb4/keystone
 
 # RUN npm install
 
-CMD /bin/bash -c 'npm install; npm start'
+# CMD /bin/bash -c 'npm install; npm start'
 
-# CMD ["npm", "start"]
+# CMD ["./run.sh"]
+
+CMD ["npm", "start"]

@@ -15,6 +15,8 @@ USER thecb4
 #
 WORKDIR /home/thecb4/keystone
 
+RUN sudo chown -R thecb4:thecb4 /home/thecb4/keystone
+
 # COPY package.json /node/lib/
 # WORKDIR /node/lib/
 # RUN npm install

@@ -5,15 +5,19 @@ FROM node:6.11.2
 
 RUN useradd -d /home/thecb4 -m -s /bin/bash thecb4 && echo "thecb4:thecb4" | chpasswd && adduser thecb4 sudo
 
-RUN chown -R thecb4:thecb4 /home/thecb4/keystone
 
-USER thecb4
+
+
 
 # RUN mkdir /home/thecb4/keystone
 #
 # RUN chown -R thecb4:thecb4 /home/thecb4/keystone
 #
 WORKDIR /home/thecb4/keystone
+
+RUN chown -R thecb4:thecb4 /home/thecb4/keystone
+
+USER thecb4
 
 # RUN chown -R thecb4:thecb4 /home/thecb4
 

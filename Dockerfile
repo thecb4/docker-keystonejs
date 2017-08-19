@@ -1,4 +1,4 @@
-FROM node:8.3.0
+FROM node:6.11.2
 
 # http://keystonejs.com/getting-started/
 # RUN npm install -g generator-keystone
